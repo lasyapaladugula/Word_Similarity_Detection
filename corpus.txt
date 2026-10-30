@@ -1,0 +1,11 @@
+Word similarity detection uses Word2Vec to learn relationships between words from their surrounding context.
+The application supports a Continuous Bag of Words model and a Skip Gram model for training word vectors.
+Cosine similarity compares word vectors and returns a score that describes how closely two words are related.
+Top N similar words finds vocabulary terms whose learned vectors are close to the query word.
+Sentence similarity represents a sentence by averaging the vectors of words known to the trained model.
+Semantic search compares a query vector with sentences in this corpus and ranks the most relevant text.
+Text preprocessing converts words to lowercase, removes punctuation, and filters common English stop words.
+The Word2Vec vocabulary is learned from the training corpus, so a word must appear in the corpus to have a vector.
+The visualization feature uses principal component analysis to show word vectors in two dimensions.
+Training reads dataset corpus text and saves the trained CBOW and Skip Gram models in the model directory.
+More documents can be added to this file, with one or more sentences per line, to expand semantic search.
